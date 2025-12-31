@@ -17,13 +17,11 @@ int main() {
             cin >> a[i];
         }
 
-        string s = ""; // current string
+        string s = "";
 
         for (int i = 0; i < n; i++) {
-            string option1 = a[i] + s; // add to beginning
-            string option2 = s + a[i]; // add to end
-
-            // keep lexicographically smaller
+            string option1 = a[i] + s; 
+            string option2 = s + a[i]; 
             if (option1 < option2)
                 s = option1;
             else
